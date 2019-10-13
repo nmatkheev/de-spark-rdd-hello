@@ -7,7 +7,6 @@ import Argonaut._
 import org.apache.log4j.LogManager
 import json_reader_matkheev.sparkProject.Wine
 
-// val filepath = "file:///Users/lancer/IdeaProjects/json_reader_matkheev/target/winemag-data-130k-v2.json"
 
 object JsonReader extends App {
   val log = LogManager.getLogger("main_logger")
@@ -46,8 +45,5 @@ object Parser {
 
     val jsond = data.map(payload)
     jsond.count
-
-    val line = """{"id":73276,"country":"US","points":84,"price":13.0,"title":"Jekel 2009 Chardonnay (Arroyo Seco)","variety":"Chardonnay","winery":"Jekel"}"""
-    val line2 = """{"name":"Mark","age":191}"""
   }
 }
